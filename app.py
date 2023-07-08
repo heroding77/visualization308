@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory     
+import os
 
 app = Flask(__name__)
 
@@ -10,7 +11,6 @@ def index():
 
 @app.route('/index')
 def home():
-    # return render_template("index.html")
     return index()
 
 
@@ -57,6 +57,14 @@ def Projections4():
 @app.route('/Projections5')
 def Projections5():
     return render_template("Projections5.html")
+
+@app.route('/favicon.ico')
+def favicon():
+    print(os.path.join(app.root_path, 'static/assets/images'))
+    return send_from_directory(os.path.join(app.root_path, 'static','assets','images'), '308four.icon')
+
+
+
 
 if __name__ == '__main__':
     app.run(host='localhost',port=8001,debug=True)
