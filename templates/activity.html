@@ -9,14 +9,15 @@
 		<meta name="description" content="">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/macarons.js"></script>
 		<link rel="stylesheet" href="static/assets/css/animate.min.css">
 		<link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="static/assets/css/font-awesome.min.css">
 		<link href='#css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="static/assets/css/templatemo-style.css">
         <link rel="stylesheet" href="static/assets/css/util.css">
-        <link rel="stylesheet" href="static/assets/css/map.css">
+        <link rel="stylesheet" href="static/assets/css/activity.css">
         
 	</head>
 	<body id="top">
@@ -84,28 +85,10 @@
 		<!-- end navigation -->
         
     	<!-- start home -->
-        <div class="main" class="bordered">
-            <div id="graph" class="bordered"></div>
-            <div id="control" class="bordered">
-              <div id="list" class="bordered">
-                <div id="title">
-                  <h2 class="board_font">Leaderboard</h2>
-                </div>
-                <div id="leaderboard_div" class="scrollit">
-                  <table id="leaderboard_table">
-                  </table>
-                </div>
-              </div>
-              <div id="details" class="bordered">
-                <div id="title">
-                  <h2 class="board_font">Details</h2>
-                </div>
-                <div id="details_div" class="scrollit">
-                  <table id="details_table"></table>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="main">
+            <div id="activity"></div>
+        </div>
+    
 
     	<!-- end home -->
 
@@ -132,5 +115,5 @@
 		<script src="static/assets/js/wow.min.js"></script>
 		<script src="static/assets/js/custom.js"></script>
         <script src="static/assets/js/util.js"></script>
-        <script src="static/assets/js/map.js"></script>
+        <script src="static/assets/js/activity.js"></script>
 </html>
