@@ -19,19 +19,19 @@ def map():
 
 
 @app.route('/openrank')
-def map():
+def openrank():
     return render_template("openrank.html")
 
 @app.route('/activity')
-def map():
+def activity():
     return render_template("activity.html")
 
 @app.route('/attention')
-def map():
+def attention():
     return render_template("attention.html")
 
 @app.route('/stars')
-def map():
+def stars():
     return render_template("stars.html")
 
 
