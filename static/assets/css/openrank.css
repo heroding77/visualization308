@@ -1,12 +1,15 @@
-
-.main{
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
+.main {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
 }
+
 #activity {
-    padding: 20px;
-    width: 1500px;
-    height: 900px;
-    border: 1px solid white;
-  }
+  padding: 20px;
+  width: 1500px;
+  height: 900px;
+  border: none;
+  background-color: #333;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
