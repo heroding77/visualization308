@@ -1,4 +1,4 @@
-var container = document.getElementById('graph-sb');
+var container = document.getElementById('graph');
 var chart = echarts.init(container);
 
 var baseUrl = 'https://oss.x-lab.info/open_digger/github/';

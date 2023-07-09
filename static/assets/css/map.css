@@ -3,36 +3,41 @@
     display: flex;
     justify-content: center;
 }
-#graph-sb {
+#graph {
 width: 800px;
-height: 800px;
+height: 900px;
 }
 
 #control {
 width: 500px;
-height: 800px;
+height: 900px;
 }
 
 #list {
 width: 480px;
-height: 400px;
+height: 360px;
 margin: 10px;
 }
 
 #details {
-width: 480px;
-height: 340px;
-margin: 10px;
+    width: 480px;
+    height: 500px;
+    margin: 10px;
+}
+
+.board_font {
+    padding: 20px;
+    margin: 10px;
 }
 
 #title {
-text-align: center;
-font-size: 12px;
+    text-align: center;
+    font-size: 10px;
 }
 
 #leaderboard_table {
 width: 95%;
-margin: 10px;
+margin: 5px;
 }
 
 #details_table {
@@ -56,6 +61,7 @@ height: 380px;
 overflow-x: hidden;
 overflow-y: auto;
 }
+
 
 tr:nth-child(even) {
 background-color: #D6EEEE;
