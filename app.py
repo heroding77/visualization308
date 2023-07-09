@@ -60,7 +60,6 @@ def Projections5():
 
 @app.route('/favicon.ico')
 def favicon():
-    print(os.path.join(app.root_path, 'static/assets/images'))
     return send_from_directory(os.path.join(app.root_path, 'static','assets','images'), '308four.icon')
 
 
