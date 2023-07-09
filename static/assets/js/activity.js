@@ -36,6 +36,10 @@ $.getJSON(
             max: 1000
         }
     ],
+    legend: {
+        data: ['Monthly', 'Accumulate'],
+        bottom: '10px'
+    },
       tooltip: {
         trigger: 'axis'
       },
@@ -49,12 +53,14 @@ $.getJSON(
         type: 'category',
         data: Object.keys(data).filter(k => k.length === 7),
       },
-      yAxis: [{ type: 'value' }, { type: 'value' }],
+      yAxis: [{ type: 'value', name: 'Monthly' }, { type: 'value', name: 'Accumulate' }],
       series: [{
         type: 'bar',
+        name: 'Monthly',
         data: Object.keys(data).filter(k => k.length === 7).map(k => data[k]),
       }, {
         type: 'line',
+        name: 'Accumulate',
         yAxisIndex: 1,
         data: accValue,
         smooth: true,
