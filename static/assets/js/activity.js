@@ -14,12 +14,37 @@ $.getJSON(
       return p + c;
     });
     chart.setOption({
+      visualMap: [
+        {
+            show: true,
+            left: '3%',
+            type: 'continuous',
+            seriesIndex: 0,
+            min: 0,
+            max: 200,
+            inRange: {
+                color: ['#CCFFFF', '#99CCFF', '#003399']
+            }
+        },
+        {
+            show: true,
+            left: "0%",
+            type: 'continuous',
+            seriesIndex: 1,
+            dimension: 1,
+            min: 0,
+            max: 1000
+        }
+    ],
+      tooltip: {
+        trigger: 'axis'
+      },
       title: { text: `2020-2023 ${type} for ${repoName}`,
                left: 'center' ,
                textStyle: {
-                color:'#ccc'
+                color:'#808080'
                  }
-            },
+            }, 
       xAxis: {
         type: 'category',
         data: Object.keys(data).filter(k => k.length === 7),
